@@ -1,0 +1,6 @@
+{% extends "./bookinstance_list_borrowed_user.html" %}
+
+
+{% block headline %}<h1>All Borrowed books</h1>{% endblock %}
+
+{% block username %} - {{ bookinst.borrower }} {% if perms.catalog.can_mark_returned %}- <a href="{% url 'renew-book-librarian' bookinst.id %}">Renew</a>  {% endif %}{% endblock %}
