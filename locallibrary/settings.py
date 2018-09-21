@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'dk=@88l_p=xez)*i_fd_yp(8(ut#b1
 # DEBUG = True
 DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
 
-ALLOWED_HOSTS = [boiling-bayou-23969.herokuapp.com]
+ALLOWED_HOSTS = ['boiling-bayou-23969.herokuapp.com',]
 
 
 # Application definition
